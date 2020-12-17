@@ -11,7 +11,7 @@
 #pragma warning(disable:4232)
 PLUGIN_API_TABLE const gc_PluginApiTable = {
 	.Common = {
-		.Log = Log, // Do not use directly (use the LOG() macro implicitely using this instead)
+		.Log = Log, // Do not use directly (use the LOG() macro implicitly using this instead)
 		.GetPluginOption = GetPluginOption,
 		.ConvertStrGuidToGuid = ConvertStrGuidToGuid,
 		.StrNextToken = StrNextToken,

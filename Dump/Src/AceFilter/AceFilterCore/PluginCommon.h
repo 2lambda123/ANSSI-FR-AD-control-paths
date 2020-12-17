@@ -19,7 +19,7 @@
 
 /* --- DEFINES -------------------------------------------------------------- */
 #undef LOG_NO_NL
-// This new LOG macro implicitely uses the plugin-api-table (must be named "table"), and the plugin keyword (must be named "PLUGIN_KEYWORD")
+// This new LOG macro implicitly uses the plugin-api-table (must be named "table"), and the plugin keyword (must be named "PLUGIN_KEYWORD")
 #define LOG_NO_NL(lvl, frmt, ...)   api->Common.Log(lvl, LOG_CHR(lvl) ## SUB_LOG(LOG_KEYW() ## frmt), __VA_ARGS__);
 #define LOG_KEYW()                  _T("[") ## NONE(PLUGIN_KEYWORD) ## _T("] ")
 #define API_LOG                     LOG

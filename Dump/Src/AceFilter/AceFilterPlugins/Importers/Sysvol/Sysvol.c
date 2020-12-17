@@ -278,7 +278,7 @@ BOOL PLUGIN_GENERIC_INITIALIZE(
 	if (API_FAILED(bResult)) {
 		return ERROR_VALUE;
 	}
-    // Backup priv is implicitely used by FindFirst/NextFile
+    // Backup priv is implicitly used by FindFirst/NextFile
     gs_UseBackupPriv = api->Common.GetPluginOption(_T("usebackpriv"), FALSE) != NULL ? TRUE : FALSE;
     API_LOG(Info, _T("Accessing sysvol %s backup privilege"), gs_UseBackupPriv ? _T("using") : _T("not using"));
     if (gs_UseBackupPriv) {
